@@ -19,34 +19,36 @@ $textColor: #666D89;
 
 .slider {
     margin: auto;
-    // width: 1020px;
-    width: 100%;
+    width: 1020px;
     overflow: hidden;
+
+    &-controls {
+        max-height: 0px;
+        background: #F2F2F2;
+    }
 }
 
 .slider-content {
     display: flex;
-    width: 100%;
-}
+    width: 1020px;
 
-.slider-controls {
-    width: 100%;
 }
 
 #prevBtn {
-    position:absolute;
-    left: 3.92%;
-    right: 94.51%;
-    top: 47.83%;
-    bottom: 47.67%;
+    // position:absolute;
+    // left: 25%;
+    // right: 70%;
+    // top: 39%;
+    // bottom: 60%;
+    position: relative;
+    left: 40px;
+    bottom: 310px;
 }
 
 #nextBtn {
-    position: absolute;
-    left: 94.51%;
-    right: 3.92%;
-    top: 47.83%;
-    bottom: 47.67%;
+    position: relative;
+    left: 940px;
+    bottom: 310px;
 }
 
 

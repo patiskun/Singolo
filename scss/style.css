@@ -1,7 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,regular,italic,700,900);
+html {
+  display: table;
+  margin: auto;
+  background-color: #e5e5e5;
+}
+
 body {
   font-Family: "Lato", sans-serif;
   font-style: normal;
+  width: 1020px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 nav {
@@ -47,11 +56,15 @@ nav {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  font-size: 12px;
-  font-weight: bold;
   margin-top: 42px;
   margin-bottom: 39px;
   margin-right: 40px;
+  height: 14px;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 14px;
+  font-weight: bold;
+  letter-spacing: -0.035em;
 }
 
 .menu__item:first-child a {
@@ -68,7 +81,7 @@ nav {
 }
 
 .menu__item:before {
-  content: "\2022";
+  content: "\2027";
   color: white;
   display: inline-block;
   width: 2em;

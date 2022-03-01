@@ -17,9 +17,18 @@ $pinkColor: #F06C64;
 $whiteColor: #F2F2F2;
 $textColor: #666D89;
 
+html {
+    display: table;
+    margin: auto;
+    background-color: #e5e5e5;
+}
+
 body {
     font-Family: $fontFamily, sans-serif;
-    font-style: normal
+    font-style: normal;
+    width: 1020px;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 nav {
@@ -57,11 +66,17 @@ nav {
 .menu {
     display: flex;
     list-style: none;
-    font-size: 12px;
-    font-weight: bold; 
+    
     margin-top: 42px;
     margin-bottom: 39px;
     margin-right: 40px;
+    height: 14px;
+
+    font-size: 12px;
+    font-style: normal;
+    line-height: 14px;
+    font-weight: bold; 
+    letter-spacing: -0.035em;
     
     &__item:first-child a{
         color:$pinkColor;
@@ -71,23 +86,29 @@ nav {
     &__item {
         margin-left: 25px;
 
+
         &:first-child{
             &:before {
                 content:"";
             }
         }
         &:before {
-            content:"\2022";
+            // content:"\2022";
+            content:"\2027";
             color: white;
             display: inline-block;
             width:2em;
             margin-left:-1em;
+            // font-size: 6px;
+            // padding-right: 10px;
+            // padding-bottom:5px ;
         }
     }
 
     &__item-link{
         color: white;
         text-decoration: none;
+        
     }
 }
 
