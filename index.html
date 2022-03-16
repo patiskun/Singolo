@@ -16,8 +16,21 @@
 <body>
     <header>
         <nav>
-            <div class="container">
+            <div class="container">  
                 <div class="navbar">
+                    <div class="burger" id="navigation-burger">
+                        <span></span>
+                    </div>
+                    
+                    <div class="navigation-burger" id ='navigation'>
+                        
+                        <div class="navigation-item active"><a href="#">HOME</a></div>
+                        <div class="navigation-item active"><a href="#">SERVICES</a></div>
+                        <div class="navigation-item active"><a href="#">PORTFOLIO</a></div>
+                        <div class="navigation-item active"><a href="#">ABOUT</a></div>
+                        <div class="navigation-item active"><a href="#">CONTACT</a></div>
+                        <div class="logo"><p>SINGOLO<b>*</b></p></div>
+                    </div>
                     <div class="logo"><a href="#">SINGOLO<b>*</b></a></div>
                     <ul class="menu">
                         <li class="menu__item"><a href="#" class="menu__item-link"><b>HOME</b></a></li>
@@ -26,21 +39,19 @@
                         <li class="menu__item"><a href="#" class="menu__item-link">ABOUT</a></li>
                         <li class="menu__item"><a href="#" class="menu__item-link">CONTACT</a></li>
                     </ul>
-                    <div class="burger">
-                        <span></span>
-                    </div>
                 </div>
             </div>
         </nav>
     </header>
+    
     <div class="slider">
         <div class="slider-content">
-            <img src="img/Slider2.png" id="lastClone" alt="slider2">
-            <img src="img/Slider.png" alt="slider1">
-            <img src="img/Slider2.png" alt="slider2">
-            <img src="img/Slider.png" alt="slider1">
-            <img src="img/Slider2.png" alt="slider2">
-            <img src="img/Slider.png" id="firstClone" alt="slider1">
+            <img src="img/Slide2.png" id="lastClone" alt="slider2">
+            <img src="img/Slide.png" alt="slider1">
+            <img src="img/Slide2.png" alt="slider2">
+            <img src="img/Slide.png" alt="slider1">
+            <img src="img/Slide2.png" alt="slider2">
+            <img src="img/Slide.png" id="firstClone" alt="slider1">
         </div>
         <div class="slider-controls">
             <img src="img/arrow-left.svg" id="prevBtn"></img>
@@ -111,21 +122,26 @@
             <div class="elem-4"><p>Artwork</p></div>
         </div>
         <div class="pictures">
+            <!-- <div class="row"> -->
             <img src="img/portfolio/portfolio-1.png" alt="" class="elem1">
             <img src="img/portfolio/portfolio-2.png" alt="" class="elem2">
             <img src="img/portfolio/portfolio-3.png" alt="" class="elem3">
             <img src="img/portfolio/portfolio-4.png" alt="" class="elem4">
+        <!-- </div> -->
+        <!-- <div class="row"> -->
             <img src="img/portfolio/portfolio-5.png" alt="" class="elem5">
             <img src="img/portfolio/portfolio-6.png" alt="" class="elem6">
             <img src="img/portfolio/portfolio-7.png" alt="" class="elem7">
             <img src="img/portfolio/portfolio-8.png" alt="" class="elem8">
+        <!-- </div> -->
+        <!-- <div class="row"> -->
             <img src="img/portfolio/portfolio-9.png" alt="" class="elem9">
             <img src="img/portfolio/portfolio-10.png" alt="" class="elem10">
             <img src="img/portfolio/portfolio-11.png" alt="" class="elem11">
             <img src="img/portfolio/portfolio-12.png" alt="" class="elem12">
+            <!-- </div>            -->
         </div>
     </div>
-
     <div class="about_us">
         <div class="section-header">
             <h2>About Us</h2>
@@ -135,7 +151,7 @@
         </div>
         <div class="profiles">
             <div class="profile">
-                <img src="img/about_us/photo-1.png" alt="">
+                <img src="img/about_us/photo-1.png" alt="" class="photo">
                 <div class="description">
                     <h3>Adam Jensen</h3>
                     <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
@@ -148,7 +164,7 @@
                 </div>
             </div>
             <div class="profile">
-                <img src="img/about_us/photo-2.png" alt="">
+                <img src="img/about_us/photo-2.png" alt="" class="photo">
                 <div class="description">
                     <h3>Desmond Miles</h3>
                     <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
@@ -161,7 +177,7 @@
                 </div>
             </div>
             <div class="profile">
-                <img src="img/about_us/photo-3.png" alt="">
+                <img src="img/about_us/photo-3.png" alt="" class="photo">
                 <div class="description">
                     <h3>Scolara Visari</h3>
                     <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
@@ -175,7 +191,6 @@
             </div>
         </div>
     </div>
-
     <div class="form">
         <div class="header">
             <h2>Get a Quote</h2>
@@ -186,11 +201,11 @@
         <div class="form-info">
             <div class="form-input">
                 <form action="">
-                    <input type="text" placeholder="    Name (required)" class="name"><br><br>
-                    <input type="text" placeholder="    Email (required)" class="email"><br><br>
-                    <input type="text" placeholder="    Subject" class="subject"><br><br>
-                    <input type="text" placeholder="    Describe your project in detail" class="describe"><br><br>
-                    <input type="submit" value="Submit" class="submit" placeholder="SEND">
+                    <input type="text" placeholder="    Name (required)" class="name">
+                    <input type="text" placeholder="    Email (required)" class="email">
+                    <input type="text" placeholder="    Subject" class="subject">
+                    <textarea type="text" placeholder="    Describe your project in detail" class="describe"></textarea>
+                    <input type="submit" value="SEND" class="submit" placeholder="SEND">
                 </form>
             </div>
             <div class="info">
@@ -207,9 +222,17 @@
                 </div>
             </div>
         </div>
-
     </div>
-
+    <footer>
+        <p>© Copyright 2013 </p>
+        <div class="social-buttons">
+            <a href="#"><img src="img/about_us/ico-facebook.png" alt=""></a>
+            <a href="#"><img src="img/about_us/ico-google-plus.png" alt=""></a>
+            <a href="#"><img src="img/about_us/ico-twitter.png" alt=""></a>
+            <a href="#"><img src="img/about_us/ico-linkedin.png" alt=""></a>
+        </div>
+    </footer>
     <script src="js/slider.js"></script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>

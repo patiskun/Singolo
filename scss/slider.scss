@@ -13,13 +13,13 @@ $pinkColor: #F06C64;
 $whiteColor: #F2F2F2;
 $textColor: #666D89;
 
-*{
-    box-sizing: border-box;
-}
+// *{
+//     box-sizing: border-box;
+// }
 
 .slider {
-    margin: auto;
-    width: 1020px;
+    // margin: auto;
+    width: 100vw;
     overflow: hidden;
 
     &-controls {
@@ -30,25 +30,52 @@ $textColor: #666D89;
 
 .slider-content {
     display: flex;
-    width: 1020px;
+    // max-width: 100vh;
+    img{
+        max-width: 100vw;
+    }
 
 }
 
+.slider-controls {
+    width: 100vw;
+    img {
+        max-width: 100vw;
+    }
+}
+
 #prevBtn {
-    // position:absolute;
-    // left: 25%;
+    // left: 40px;
     // right: 70%;
-    // top: 39%;
+    // top: 37%;
     // bottom: 60%;
     position: relative;
+
     left: 40px;
-    bottom: 310px;
+    bottom: 27vw;
 }
 
 #nextBtn {
     position: relative;
-    left: 940px;
-    bottom: 310px;
+    left: 92%;
+    right: 40px;
+    bottom: 27vw;
+}
+
+@media screen and (max-width:$breakpoint768){ 
+    #prevBtn {
+        position: relative;
+    
+        left: 40px;
+        bottom: 27vw;
+    }
+    
+    #nextBtn {
+        position: relative;
+        left: 87%;
+        right: 40px;
+        bottom: 27vw;
+    }
 }
 
 
