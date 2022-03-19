@@ -4,6 +4,11 @@ const sliderImages = document.querySelectorAll('.slider-content img');
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
+
+$('.image').attr('draggable', false);
+// document.getElementsByClassName('image').setAttribute('draggable', false);
+
+
 let counter = 1;
 const size = sliderImages[0].clientWidth;
 

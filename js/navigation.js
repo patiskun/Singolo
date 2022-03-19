@@ -4,7 +4,7 @@ burgerElement = document.getElementById("navigation-burger");
 
 isOpen = false;
 overlay = document.createElement("div",null, {
-    classes: ['navigation-overlay'],
+    class: ['navigation-overlay'],
 });
 
 

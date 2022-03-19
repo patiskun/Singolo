@@ -65,10 +65,10 @@ nav {
   list-style: none;
   max-width: 100%;
   margin-top: 42px;
-  margin-bottom: 39px;
+  margin-bottom: 41px;
   margin-right: 40px;
   height: 14px;
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
   line-height: 14px;
   font-weight: bold;
@@ -107,14 +107,15 @@ nav {
 
 @media screen and (max-width: 767.98px) {
   .navbar .logo {
-    margin-left: 15px;
+    margin-left: 20px;
   }
   .navbar .logo a {
     font-size: 18px;
   }
   .navbar .menu {
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 10px;
+    margin-bottom: 47px;
   }
   .navbar .menu__item {
     margin-left: 10px;
@@ -146,7 +147,7 @@ nav {
   }
   .navbar .logo {
     margin-left: 35%;
-    margin-top: 40px;
+    margin-top: 32px;
   }
   .navbar .navigation-burger {
     display: block;

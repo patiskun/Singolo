@@ -125,10 +125,10 @@ $breakpoint375:374.98px;
 
         margin-bottom:20px;
         width: 100%;
-        margin-right: 20px;
+        // margin-right: 20px;
         // align-self: space-between;
 
-        flex-shrink: 2;
+        flex-shrink: 3;
         flex-grow: 3;
         img {
             // align-self: center;
@@ -188,13 +188,13 @@ $breakpoint375:374.98px;
 @media screen and (max-width:$breakpoint768){
     .portfolio{
         .filter-list {
-            margin-left: 15px;
+            margin-left: 20px;
         }
         .section-header{
-            margin-left: 15px;
+            margin-left: 20px;
         }
         .pictures {
-            margin-left: 15px;   
+            margin-left: 20px;   
             padding-bottom: 30px;   
             img{
                 width: 28%;
@@ -216,7 +216,7 @@ $breakpoint375:374.98px;
             padding-bottom: 30px;   
             margin-bottom: 0px;
             img{
-                width: 35%;
+                width: 37%;
             }
         }
     }

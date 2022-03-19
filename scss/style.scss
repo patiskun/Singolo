@@ -75,11 +75,11 @@ nav {
         list-style: none;
         max-width:100%;
         margin-top: 42px;
-        margin-bottom: 39px;
+        margin-bottom: 41px;
         margin-right: 40px;
         height: 14px;
     
-        font-size: 12px;
+        font-size: 10px;
         font-style: normal;
         line-height: 14px;
         font-weight: bold; 
@@ -128,15 +128,16 @@ nav {
     .navbar{
         
         .logo {
-            margin-left:15px;
+            margin-left:20px;
             a {
                 font-size: 18px;
             }
         }
         
         .menu {
-            margin-right: 15px;
+            margin-right: 20px;
             font-size: 10px;
+            margin-bottom: 47px;
             &__item {
                 margin-left: 10px;
         
@@ -172,7 +173,7 @@ nav {
             //     margin-left:150%;
             // }
             margin-left: 35%;
-            margin-top: 40px;
+            margin-top: 32px;
         }
         .navigation-burger {
             display: block;
