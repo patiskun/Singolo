@@ -6,7 +6,7 @@ const nextBtn = document.querySelector('#nextBtn');
 
 
 $('.image').attr('draggable', false);
-// document.getElementsByClassName('image').setAttribute('draggable', false);
+// document.getElementsByClassName('.image').setAttribute('draggable', false);
 
 
 let counter = 1;

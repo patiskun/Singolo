@@ -3,10 +3,11 @@ navigationElement = document.getElementById("navigation");
 burgerElement = document.getElementById("navigation-burger");
 
 isOpen = false;
-overlay = document.createElement("div",null, {
-    class: ['navigation-overlay'],
-});
-
+// overlay = document.createElement("div",null, {
+//     classes: ['navigation-overlay'],
+// });
+overlay = document.createElement("div");
+overlay.className = "navigation-overlay";
 
 function init(){
     burgerElement.addEventListener("click", () => toggle());
@@ -27,6 +28,9 @@ function open(){
     navigationElement.style.transform = 'translate(0)';
     burgerElement.classList.add('open');
 
+    burgerElement.style.transition='.25s'
+    burgerElement.style.transform='rotate(-90deg)'
+
     document.body.style.overflowY = 'hidden';
     navigationElement.parentNode.insertBefore(overlay, navigationElement)
 
@@ -36,6 +40,8 @@ function open(){
 function close(){
     navigationElement.style.transform = 'translate(-105%)';
     burgerElement.classList.remove('open');
+
+    burgerElement.style.transform='rotate(0deg)'
 
     document.body.style.overflowY = 'auto';
     overlay.parentNode.removeChild(overlay);
