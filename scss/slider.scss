@@ -18,9 +18,11 @@ $textColor: #666D89;
 // }
 
 .slider {
+    
     // margin: auto;
     width: 100vw;
     overflow: hidden;
+    overflow-x: hidden;
     &-controls {
         max-height: 0px;
         background: #F2F2F2;
@@ -56,14 +58,14 @@ $textColor: #666D89;
     // bottom: 60%;
     position: relative;
 
-    left: 40px;
+    left: 5%;
     bottom: 27vw;
 }
 
 #nextBtn {
     position: relative;
     left: 92%;
-    right: 40px;
+    right: 5%;
     bottom: 27vw;
 }
 
@@ -71,16 +73,29 @@ $textColor: #666D89;
     #prevBtn {
         position: relative;
     
-        left: 40px;
+        left: 3%;
         bottom: 27vw;
     }
     
     #nextBtn {
         position: relative;
         left: 87%;
-        right: 40px;
+        right: 3%;
         bottom: 27vw;
     }
 }
-
-
+@media screen and (max-width:479.98px){
+    #prevBtn {
+        position: relative;
+    
+        left: 2%;
+        bottom: 27vw;
+    }
+    
+    #nextBtn {
+        position: relative;
+        left: 87%;
+        right: 2%;
+        bottom: 27vw;
+    }
+}

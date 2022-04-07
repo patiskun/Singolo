@@ -5,10 +5,9 @@
 }
 
 .section-header {
+  margin: 0 10%;
   max-width: 100vw;
   padding-top: 20px;
-  margin-left: 40px;
-  margin-right: 44px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -27,11 +26,10 @@
 }
 
 .services-list {
+  margin: 0 10%;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "a b c" "d e f";
-  margin-left: 40px;
-  margin-right: 40px;
+      grid-template-areas: "a b c" "d e f";
   margin-top: 60px;
   padding-bottom: 52px;
 }
@@ -237,7 +235,7 @@
     margin-left: 40px;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "a b"  "c d"  "e f";
+        grid-template-areas: "a b"  "c d"  "e f";
   }
   .services .services-list .services-item-6 img {
     max-height: 40px;
@@ -277,7 +275,7 @@
     margin-left: 15px;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "a"  "b"  "c"  "d"  "e"  "f";
+        grid-template-areas: "a"  "b"  "c"  "d"  "e"  "f";
   }
 }
 /*# sourceMappingURL=services.css.map */
