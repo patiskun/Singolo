@@ -110,79 +110,62 @@ $breakpoint375:374.98px;
     }
 
     .pictures {
-        display: flex column;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-areas: 
+        "a b c d"
+        "e f g h"
+        "i j k l";
 
         margin-top: 18px;
         margin-left: 10%;
         // margin-right: 10%;
         padding-bottom: 74px;
-        max-width: 80vw;
-
+        // max-width: 80vw;
+        margin-right: 10%;
         flex-shrink: 5;
         flex-grow: 5;
         flex-basis: auto;
 
         margin-bottom:20px;
-        // width: 100%;
-        // margin-right: 20px;
-        // align-self: space-between;
-
-        flex-shrink: 3;
-        flex-grow: 3;
+        gap: 30px;
         img {
-            // align-self: center;
-            width: 21%;
-            margin-bottom: 20px;
-
+            width: 100%;
         }
         .elem1 {
-            margin-right: 20px;
+            grid-area: a;
         }
         .elem2 {
-            margin-right: 20px;
-            
+            grid-area: b;
         }
         .elem3{
-            margin-right: 20px;
-            
+            grid-area: c;
         }
         .elem4 {
-            margin-right: 20px;
-            
+            grid-area: d;
         }
         .elem5 {
-            margin-right: 20px;
-            
+            grid-area: e;
         }
         .elem6{
-            margin-right: 20px;
-            
+            grid-area: f;
         }
         .elem7{
-            margin-right: 20px;
-            
+            grid-area: g;
         }
         .elem8 {
-            margin-right: 20px;
-            
+            grid-area: h;
         }
         .elem9 {
-            margin-right: 20px;
-            
+            grid-area: i;
         }
         .elem10 {
-            margin-right: 20px;
-            
+            grid-area: j;
         }
         .elem11{
-            margin-right: 20px;
-            
+            grid-area: k;
         }
         .elem12 {
-            margin-right: 20px;
-            
+            grid-area: l;
         }
     }
 }
@@ -196,13 +179,15 @@ $breakpoint375:374.98px;
             margin-left: 20px;
         }
         .pictures {
-            max-width:90%;
+            grid-template-areas: 
+            "a b c"
+            "d e f"
+            "g h i"
+            "j k l";
+            gap:20px;
             margin-left: 20px;  
             margin-right: 20px;
             padding-bottom: 30px;   
-            img{
-                width: 27%;
-            }
         }
     }
 }
@@ -218,12 +203,18 @@ $breakpoint375:374.98px;
             margin-left: 10%; 
         }
         .pictures {
+            grid-template-areas: 
+            "a b"
+            "c d"
+            "e f"
+            "g h"
+            "i j"
+            "k l";
+            gap:20px;
             margin-left: 10%;   
+            margin-right: 10%;
             padding-bottom: 30px;   
             margin-bottom: 0px;
-            img{
-                width: 37%;
-            }
         }
     }
 }
